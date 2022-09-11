@@ -1,0 +1,7 @@
+table img{
+    width: 40px;
+}
+table thead tr td{
+    color: #fff !important;
+    background: #000 !important;
+}

@@ -1,0 +1,91 @@
+.login {
+    width: 100%;
+    min-height: 100vh;
+    margin-left: 0 !important;
+}
+
+.login_img {
+    width: 70%;
+    display: block;
+    margin: 3.5em auto;
+    animation: 1s img_movi ease-out infinite alternate;
+}
+@keyframes img_movi{
+    0%{
+        transform: translateY(-5%);
+    }
+    0%{
+        transform: translateY(-3%);
+    }
+}
+
+.columna-1{
+    position: relative;
+}
+.columna-1::before{
+    content: '';
+    position: absolute;
+    bottom: -30px;
+    width: 90%;
+    height: 20px;
+    background: rgb(0 0 0 / 30%);   
+    z-index: -1;
+    left: 5%;
+    filter: blur(10px);
+    border-radius: 50%;
+}
+
+.login  h2 {
+    padding-top: .5em;
+    padding-bottom: 1em;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.login form {
+    width: 100%;
+    padding: 3em 2em;
+    /*box-shadow: -15px -15px 15px 1px rgb(255 255 255 / 20%), 15px 15px 15px 1px rgb(0 0 0 / 10%), inset -5px -5px 5px 1px rgb(255 255 255 / 20%), inset 5px 5px 5px 1px rgb(0 0 0 / 10%);*/
+    border: 1px solid #000;
+    border-radius: 10px;
+    position: relative;
+    margin-bottom: 3em;
+}
+
+
+.login form * {
+    margin-top: 1em;
+}
+.user_img {
+    margin: 0 !important;
+    position: absolute;
+    width: 130px;
+    top: -10%;
+    right: 42%;
+}
+
+.login  form input, .login  form select {
+    width: 80%;
+    display: block;
+    margin: auto;
+    background: transparent !important;
+    border: none !important;
+    border-radius: 0 !important;
+    border-bottom: 2px solid #000 !important;
+}
+
+.btn {
+    display: block;
+    margin: auto;
+    margin-top: 1em;
+}
+
+a {
+    padding: .5em 1.5em;
+    text-decoration: none;
+    color: inherit !important;
+}
+a:hover{
+    color: #fff !important;
+}
+

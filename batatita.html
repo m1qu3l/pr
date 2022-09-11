@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            height: 100vh;
+            transition: background .2s ease;
+        }
+    </style>
+</head>
+<body>
+    <div class="co">
+        <h1>i love u</h1>
+        <pre style="font-size: 1em; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; font-weight: 900;">
+
+
+
+
+            Amo a luisa
+
+
+
+
+            Amo mucho a luisa
+        </pre>
+    </div>
+    <script>
+        const a = ()=> parseInt(Math.random()*255),
+        c = ()=> document.querySelector("body").style.setProperty("background", `rgba(${a()}, ${a()}, ${a()}, .6)`);
+        setTimeout(c, 1)
+        setInterval(c, 1000)
+    </script>
+</body>
+
+</html>
